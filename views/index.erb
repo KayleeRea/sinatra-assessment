@@ -6,5 +6,8 @@
 </head>
 <body>
 <a href="/product">Add a Product</a>
+<ul><% new_product.each do |product|%>
+    <li><%= product %></li>
+  <% end %></ul>
 </body>
 </html>
