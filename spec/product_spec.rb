@@ -6,6 +6,7 @@ Capybara.app = App
 
 feature 'User can add products to the homepage' do
   scenario 'User adds taks' do
+    visit '/'
     expect(page).to have_content("Welcome")
     click_link("Add a Product")
     fill_in"new_product", with:"T-Shirt"
